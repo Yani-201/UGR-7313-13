@@ -1,118 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Mall</title>
-    <link rel="icon" type="image/x-icon" href="/images/dream logo.jpg">
-    <script src="https://kit.fontawesome.com/403a9b686b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        
-        <div class="container">
-            
-            <p id="top">opening hours; weekdays: 8:00am - 10:00pm weekends: 6:00am - 12:00pm</p>
-            
-            <div class="logo">
-                 <h1><span><img src="/images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span> &nbsp; DreamMall </h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dream Mall</title>
+        <link rel="stylesheet" href="style.css">
+    
+        <link rel="icon" type="image/x-icon" href="./images/dream logo.jpg">
+    </head>
+    <body class="body">
+        <header class="header">
+            <p>opening hours; weekdays: 8:00am - 10:00pm weekends: 6:00am - 12:00pm</p>
+        </header>
+        <div class="top-container">
+            <div class="top-container__logo">
+                <h1><span><img src="./images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span> DreamMall </h1>
             </div>
-
-            <div class="searchbar">
+            <div class="top-container__search">
                 <form>
                     <label for="searching">Search</label>
-                    <input type="text" id="searching" placeholder="search anything" name="query">
-                    <button title="search"><img src="/images/search.png" alt="search icon"></button>
-                </form>
+                    <input type="text" id="searching" placeholder="search anything" name="query" onblur="validateSearch()">
+                    <button title="search"><img src="./images/search.png" alt="search icon" ></button>
+                </form> 
             </div>
-
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Cinema.html">Cinema</a></li>
-                    <li><a href="Food Corner.html">Food Corner</a></li>
-                    <li><a href="Game Zone.html">Game Zone</a></li>
-                    <li><a href="Shopping.html">Shopping</a></li>
-                    <li class="visiting"><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        
         </div>
-    </header>
-    <hr>
-    <main>
-        <section class="start">
-            <img src="/images/mall crops.png" alt="a picture of dream mall" width="100%" height="200">
-            <h1 class="page name">Contact Us</h1>
-        </section>
-        <section class="content">
-            <div class="follow">
-                <h2>Follow Us</h2>
-                <a href="#"><img src="/images/instagram.png" alt="instagram page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/telegram.png" alt="telegram page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/twitter.png" alt="twitter page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/linkedin.png" alt="linkedin page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/facebook.png" alt="facebook page link" height="25" width="25"></a>
-            </div>
-            <div class="contact">
-                <h2>Contact Us</h2>
-                <h4>(251)11- 554- 03- 03</h4>
-                <h4>dreammall@gmail.com</h4>
-            </div>
-            <div class="subscribe">
-                <h2>Subscribe for latest updates</h2>
-                <form>
-                    <label for="nm">Name</label>
-                    <input type="text" id="nm"  name="Full name"><br>
-                    <label for="em">Email</label>
-                    <input type="text" id="em"  name="email"><br>
-                    <button>Subscribe</button>
-                </form>
-            </div>
-            <div class="message">
-                <h2>Tell us what you feel</h2>
-                <form>
-                    <label for="nam">Name</label>
-                    <input type="text" id="nam"  name="name"><br>
-                    <label for="msg">Message</label>
-                    <input type="text" id="msg"  name="messages"><br>
-                    <button>Submit</button>
-                </form>
-            </div>
-            <div class="websites">
-                <h2>Related Websites</h2>
-                <ul>
-                    <li><a href="#">Dream Cinema Website</a></li>
-                    <li><a href="#">Dream Game Zone Website</a></li>
-                    <li><a href="#">Dream Mall's Community Website</a></li>
-                </ul>
-            </div>
 
-        </section>
-    </main>
-    <hr>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__ul__li"><a href="Home.html">Home</a></li>
+                <li class="nav__ul__li"><a href="About.html">About</a></li>
+                <li class="nav__ul__li"><a href="Cinema.html">Cinema</a></li>
+                <li class="nav__ul__li"><a href="Food Corner.html">Food Corner</a></li>
+                <li class="nav__ul__li"><a href="Game Zone.html">Game Zone</a></li>
+                <li class="nav__ul__li"><a href="Shopping.html">Shopping</a></li>
+                <li class="nav__ul__li nav__li__visiting"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <section class="start">
+                <h1 class="start__page-name">Contact Us</h1>
+            </section>
+            <section class="whole__parts">
+                <div class="whole__parts__column">
 
-    <footer>
-        <div class="container">
-            <div class="logo">
-                <h1><span><img src="/images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span> &nbsp; DreamMall </h1>
-            </div>
-            <p id="moto">A place where there is something for everyone</p>
-            <div class="follow">
-                <h2>Follow Us</h2>
-                <a href="#"><img src="/images/instagram.png" alt="instagram page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/telegram.png" alt="telegram page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/twitter.png" alt="twitter page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/linkedin.png" alt="linkedin page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/facebook.png" alt="facebook page link" height="25" width="25"></a>
-            </div>
-            <p>(251)11- 554- 03- 03</p>
-            <p id="bottom">copyright 2022, All rights reserved</p>
+                    <div class="whole__parts__column__contact">
+                        <h2>Follow Us</h2>
+                        <a href="#"><img src="./images/instagram.png" alt="instagram page link" height="25" width="25"></a>
+                        <a href="#"><img src="./images/telegram.png" alt="telegram page link" height="25" width="25"></a>
+                        <a href="#"><img src="./images/twitter.png" alt="twitter page link" height="25" width="25"></a>
+                        <a href="#"><img src="./images/linkedin.png" alt="linkedin page link" height="25" width="25"></a>
+                        <a href="#"><img src="./images/facebook.png" alt="facebook page link" height="25" width="25"></a>
+                    </div>
+                    <div class="whole__parts__column__contact">
+                        <h2>Contact Us</h2>
+                        <h4>(251)11- 554- 03- 03</h4>
+                        <h4>dreammall@gmail.com</h4>
+                    </div>
+                    <div class="whole__parts__column__contact">
+                        <h2>Related Websites</h2>
+                        <ul>
+                            <li><a href="#">Dream Cinema Website</a></li>
+                            <li><a href="#">Dream Game Zone Website</a></li>
+                            <li><a href="#">Dream Mall's Community Website</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="whole__parts__column">
+                    <div class="whole__parts__column__contact">
+                        <h2>Subscribe for latest updates</h2>
+                        <form id="myForm1">
+                            <label for="nm">Name</label>
+                            <input type="text" id="nm" name="Full name" onblur="validateName()"><span id="nameError"></span><br><br>
+                            <label for="em">Email</label>
+                            <input type="text" id="em" name="Email" onblur="validateEmail()"><span id="emailError"></span><br><br>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="whole__parts__column__contact">
+                        <h2>Tell us what you feel</h2>
+                        <form id="myForm2">
+                            <label for="yem"> Your Email</label>
+                            <input type="text" id="yem" name="Your Email" onblur="validateYourEmail()"><span id="YouremailError"></span><br><br>
+                            <label for="msg">Message</label>
+                            <textarea id="msg" name="Message" onblur="validateMessage()"></textarea><span id="messageError"></span><br><br>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                
 
-        </div>
-    </footer>
-    
-</body>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__container__contained">
+                    <h1><span><img src="./images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span>  DreamMall </h1>
+                    <p id="moto">A place where there is something for everyone</p>
+                </div>
+                <div class="footer__container__contained">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="./images/instagram.png" alt="instagram page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/telegram.png" alt="telegram page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/twitter.png" alt="twitter page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/linkedin.png" alt="linkedin page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/facebook.png" alt="facebook page link" height="25" width="25"></a>
+                </div>
+            </div>
+                <p id="call">(251)11- 554- 03- 03</p>
+                <p id="bottom">copyright 2022, All rights reserved</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>

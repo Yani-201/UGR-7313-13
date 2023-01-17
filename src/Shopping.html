@@ -1,172 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Mall</title>
-    <link rel="icon" type="image/x-icon" href="/images/dream logo.jpg">
-    <script src="https://kit.fontawesome.com/403a9b686b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        
-        <div class="container">
-            
-            <p id="top">opening hours; weekdays: 8:00am - 10:00pm weekends: 6:00am - 12:00pm</p>
-            
-            <div class="logo">
-                 <h1><span><img src="/images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span> &nbsp; DreamMall </h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dream Mall</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="./images/dream logo.jpg">
+    </head>
+    <body class="body">
+        <header class="header">
+            <p>opening hours; weekdays: 8:00am - 10:00pm weekends: 6:00am - 12:00pm</p>
+        </header>
+        <div class="top-container">
+            <div class="top-container__logo">
+                <h1><span><img src="./images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span> DreamMall </h1>
             </div>
-
-            <div class="searchbar">
+            <div class="top-container__search">
                 <form>
                     <label for="searching">Search</label>
-                    <input type="text" id="searching" placeholder="search anything" name="query">
-                    <button title="search"><img src="/images/search.png" alt="search icon"></button>
+                    <input type="text" id="searching" placeholder="search anything" name="query" onblur="validateSearch()">
+                    <button title="search"><img src="./images/search.png" alt="search icon" ></button>
+                </form> 
             </div>
-
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Cinema.html">Cinema</a></li>
-                    <li><a href="Food Corner.html">Food Corner</a></li>
-                    <li><a href="Game Zone.html">Game Zone</a></li>
-                    <li class="visiting"><a href="Shopping.html">Shopping</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        
         </div>
-    </header>
-    <hr>
-    <main>
-        <section class="start">
-            <img src="/images/mall crops.png" alt="a picture of dream mall" width="100%" height="200">
-            <h1 class="page name">Shopping</h1>
-        </section>
-        <section class="container">
-            <div class="cloth">
-                <h2>Cloth Shops</h2>
-                <div class="logopic">
-                    <img src="/images/shop1.png" alt="logo of the shop" width="170" height="170"><br>
-                    <p>Fashion Girl, find the latest trend clothes for girls</p>
-                </div>
-                <div class="logopic">
-                    <img src="/images/shop2.png" alt="logo of the shop" width="170" height="170"><br>
-                    <p>The Vintage Wardrobe, get the coolest vintage clothes from us</p>
-                </div>
-                <div class="logopic">
-                    <img src="/images/shop3.png" alt="logo of the shop" width="170" height="170"><br>
-                    <p>Lit Clothing Shop, dope fashion collections for men</p>
-                </div>
-                <div class="logopic">
-                    <img src="/images/shop4.png" alt="logo of the shop" width="170" height="170"><br>
-                    <p>The Rich Extensions, Is your wedding getting close? come to us we got something for everyone!</p>
-                </div>
-            </div>
-            <div class="beauty">
-                <h2>Beauty/Barber Shop</h2>
-                <div class="pic-aud">
-                    <img src="/images/afro hair.png" alt="afro hair salon" width="200" height="200"><br>
-                    <audio controls>
-                        <source src="/audio/afro hairsalon.mp3" type="audio/mpeg">
-                    </audio>
-                    <details><summary>Afro hair salon</summary>welcome to afro hair salon</details>
-                    <p>Afro Hair Salon, Get the best hair style and shine with beauty</p>
-                </div>
-                <div class="pic-aud">
-                    <img src="/images/amigo barber.png" alt="amigo barber" width="200" height="200"><br>
+
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__ul__li"><a href="Home.html">Home</a></li>
+                <li class="nav__ul__li"><a href="About.html">About</a></li>
+                <li class="nav__ul__li"><a href="Cinema.html">Cinema</a></li>
+                <li class="nav__ul__li"><a href="Food Corner.html">Food Corner</a></li>
+                <li class="nav__ul__li"><a href="Game Zone.html">Game Zone</a></li>
+                <li class="nav__ul__li nav__li__visiting"><a href="Shopping.html">Shopping</a></li>
+                <li class="nav__ul__li"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <section class="start">
+                
+                <h1 class="start__page-name">Shopping</h1>
+            </section>
             
-                    <audio controls>
-                        <source src="/audio/amigo barbershop.mp3" type="audio/mpeg">
-                    </audio>
-                    <details><summary>Amigo barbershop</summary>welcome to amigo barber shop</details>
-                    <p>Amigo Barber shop, gives you the best haircut</p>
+                <h3>Our shopping mall has everything you need!</h3>
+                <div class="whole">
+                    <h2>Cloth Shops</h2>
+                    <div class="whole__parts">
+                    
+                        <div class="whole__parts__pic">
+                            <img src="./images/shop1.png" alt="logo of the shop" width="200" height="200"><br>
+                            <p>Fashion Girl, find the latest trend clothes for girls</p>
+                        </div>
+                        <div class="whole__parts__pic">
+                            <img src="./images/shop2.png" alt="logo of the shop" width="200" height="200"><br>
+                            <p>The Vintage Wardrobe, get the coolest vintage clothes from us</p>
+                        </div>
+                        <div class="whole__parts__pic">
+                            <img src="./images/shop3.png" alt="logo of the shop" width="200" height="200"><br>
+                            <p>Lit Clothing Shop, dope fashion collections for men</p>
+                        </div>
+                        <div class="whole__parts__pic">
+                            <img src="./images/shop4.png" alt="logo of the shop" width="200" height="200"><br>
+                            <p>The Rich Extensions, Is your wedding getting close? come to us we got something for everyone!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="pic-aud">
-                    <img src="/images/maris hair.png" alt="maris hair salon" width="200" height="200"><br>
-                
-                    <audio controls>
-                        <source src="/audio/maris hair salon.mp3" type="audio/mpeg">
-                    </audio>
-                    <details><summary>maris hairsalon</summary>welcome to maris hair salon your beauty is our duty</details>
-                    <p>Maris Hair Salon, There is someone for everyone. Is it boys or girls? Don't worry we got it all</p>
+                <div class="whole">
+                    <h2>Beauty/Barber Shop</h2>
+                    <div class="whole__parts">
+                        <div class="whole__parts__pic-aud">
+                            <img src="./images/afro hair.png" alt="afro hair salon" width="250" height="250"><br>
+                            <audio controls>
+                                <source src="./audio/afro hairsalon.mp3" type="audio/mpeg">
+                            </audio>
+                            <details><summary>Afro hair salon</summary>welcome to afro hair salon</details>
+                            <p>Afro Hair Salon, Get the best hair style and shine with beauty</p>
+                        </div>
+                        <div class="whole__parts__pic-aud">
+                            <img src="./images/amigo barber.png" alt="amigo barber" width="250" height="250"><br>
+                    
+                            <audio controls>
+                                <source src="./audio/amigo barbershop.mp3" type="audio/mpeg">
+                            </audio>
+                            <details><summary>Amigo barbershop</summary>welcome to amigo barber shop</details>
+                            <p>Amigo Barber shop, gives you the best haircut</p>
+                        </div>
+                        <div class="whole__parts__pic-aud">
+                            <img src="./images/maris hair.png" alt="maris hair salon" width="250" height="250"><br>
+                        
+                            <audio controls>
+                                <source src="./audio/maris hair salon.mp3" type="audio/mpeg">
+                            </audio>
+                            <details><summary>maris hairsalon</summary>welcome to maris hair salon your beauty is our duty</details>
+                            <p>Maris Hair Salon, There is someone for everyone. Is it boys or girls? Don't worry we got it all</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="gift">
-                <h2>Gift/Accesory Shops</h2>
-                <div class="vid">
-                    <video width="200" controls>
-                        <source src="/videos/accessories.mp4" type="video/mp4">  
-                    </video>
-                    <details><summary>Dina Accesories vid</summary>Above is a video of the accessory shop's materials like jewellerys</details>
-                    <p>Dina Accesories, Get jewellerys of any kind. Gold, Silver... you name it!</p>
+                <div class="whole">
+                    <h2>Gift/Accesory Shops</h2>
+                    <div class="whole__parts">
+                        <div class="whole__parts__vid">
+                            <video width="200" controls>
+                                <source src="./videos/accessories.mp4" type="video/mp4">  
+                            </video>
+                            <details><summary>Dina Accesories vid</summary>Above is a video of the accessory shop's materials like jewellerys</details>
+                            <p>Dina Accesories, Get jewellerys of any kind. Gold, Silver... you name it!</p>
+                        </div>
+                        
+                        <div class="whole__parts__vid">
+                            <video width="200" controls>
+                                <source src="./videos/gift.mp4" type="video/mp4">  
+                            </video>
+                            <details><summary>Glamour Gift Shop Vid</summary>Above is a video of the Gift shop's different packages</details>
+                            <p>Glamour Gift Shop, Get your loved one's a gift! women/men anyone</p>
+                        </div>
+                        
+                        <div class="whole__parts__vid">
+                            <video width="200" controls>
+                                <source src="./videos/cosmotics.mp4" type="video/mp4">  
+                            </video>
+                            <details><summary>Lina Cosmetics Vid</summary>Above is a video of the Lina Cosmetic's products like makeups...</details>
+                            <p>Lina Cosmetics, Get glamorous and impress everyone with our products</p>
+                        </div>
+                    </div> 
                 </div>
-                
-                <div class="vid">
-                    <video width="200" controls>
-                        <source src="/videos/gift.mp4" type="video/mp4">  
-                    </video>
-                    <details><summary>Glamour Gift Shop Vid</summary>Above is a video of the Gift shop's different packages</details>
-                    <p>Glamour Gift Shop, Get your loved one's a gift! women/men anyone</p>
+                <div class="whole">
+                    <h2>Coming soon</h2>
+                    <div class="whole__parts">
+                        <div class="whole__parts__pic-aud">
+                            <img src="./images/make up.png" alt="afro hair salon" width="250" height="250"><br>
+                        
+                            <audio controls>
+                                <source src="./audio/makeup.mp3" type="audio/mpeg">
+                            </audio>
+                            <details><summary>makeup salon</summary>welcome we will have a makeup studio opening soon stay tuned
+                                </details>
+                            <p>A new makeup salon will be opening at our mall, Brides get ready!</p>
+                        </div>
+                        <div class="whole__parts__pic-aud">
+                            <video width="250" height="250" controls>
+                                <source src="./videos/upcomingb.mp4" type="video/mp4">  
+                            </video>
+                            <details><summary>Just Girls Boutique vid</summary>Above is a video of the upcoming Girl's only boutigues's snick pics</details>
+                            <p>Just girls boutique, Are you ready! No more roaming around because we have got it all in one for you</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="vid">
-                    <video width="200" controls>
-                        <source src="/videos/cosmotics.mp4" type="video/mp4">  
-                    </video>
-                    <details><summary>Lina Cosmetics Vid</summary>Above is a video of the Lina Cosmetic's products like makeups...</details>
-                    <p>Lina Cosmetics, Get glamorous and impress everyone with our products</p>
-                </div>
-                 
-            </div>
-            <div class="Upcoming">
-                <h2>coming soon</h2>
-                <div>
-                    <img src="/images/make up.png" alt="afro hair salon" width="200" height="200"><br>
-                
-                    <audio controls>
-                        <source src="/audio/makeup.mp3" type="audio/mpeg">
-                    </audio>
-                    <details><summary>makeup salon</summary>welcome we will have a makeup studio opening soon stay tuned
-                        </details>
-                    <p>A new makeup salon will be opening at our mall, Brides get ready!</p>
-                </div>
-                <div class="vid">
-                    <video width="200" controls>
-                        <source src="/videos/upcomingb.mp4" type="video/mp4">  
-                    </video>
-                    <details><summary>Just Girls Boutique vid</summary>Above is a video of the upcoming Girl's only boutigues's snick pics</details>
-                    <p>Just girls boutique, Are you ready! No more roaming around because we have got it all in one for you</p>
-                </div>
-            </div>
-        </section>
-    </main>
+            
+        </main>
 
-    <hr>
 
-    <footer>
-        <div class="container">
-            <div class="logo">
-                <h1><span><img src="/images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span> &nbsp; DreamMall </h1>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__container__contained">
+                    <h1><span><img src="./images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span>  DreamMall </h1>
+                    <p id="moto">A place where there is something for everyone</p>
+                </div>
+                <div class="footer__container__contained">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="./images/instagram.png" alt="instagram page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/telegram.png" alt="telegram page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/twitter.png" alt="twitter page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/linkedin.png" alt="linkedin page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/facebook.png" alt="facebook page link" height="25" width="25"></a>
+                </div>
             </div>
-            <p id="moto">A place where there is something for everyone</p>
-            <div class="follow">
-                <h2>Follow Us</h2>
-                <a href="#"><img src="/images/instagram.png" alt="instagram page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/telegram.png" alt="telegram page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/twitter.png" alt="twitter page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/linkedin.png" alt="linkedin page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/facebook.png" alt="facebook page link" height="25" width="25"></a>
-            </div>
-            <p>(251)11- 554- 03- 03</p>
-            <p id="bottom">copyright 2022, All rights reserved</p>
-
-        </div>
-    </footer>
-    
-</body>
+                <p id="call">(251)11- 554- 03- 03</p>
+                <p id="bottom">copyright 2022, All rights reserved</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>

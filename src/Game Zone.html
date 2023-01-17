@@ -1,164 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Mall</title>
-    <link rel="icon" type="image/x-icon" href="/images/dream logo.jpg">
-    <script src="https://kit.fontawesome.com/403a9b686b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        
-        <div class="container">
-            
-            <p id="top">opening hours; weekdays: 8:00am - 10:00pm weekends: 6:00am - 12:00pm</p>
-            
-            <div class="logo">
-                 <h1><span><img src="/images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span> &nbsp; DreamMall </h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dream Mall</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="./images/dream logo.jpg">
+    </head>
+    <body class="body">
+        <header class="header">
+            <p>opening hours; weekdays: 8:00am - 10:00pm weekends: 6:00am - 12:00pm</p>
+        </header>
+        <div class="top-container">
+            <div class="top-container__logo">
+                <h1><span><img src="./images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span> DreamMall </h1>
             </div>
-
-            <div class="searchbar">
+            <div class="top-container__search">
                 <form>
                     <label for="searching">Search</label>
-                    <input type="text" id="searching" placeholder="search anything" name="query">
-                    <button title="search"><img src="/images/search.png" alt="search icon"></button>
-                </form>
+                    <input type="text" id="searching" placeholder="search anything" name="query" onblur="validateSearch()">
+                    <button title="search"><img src="./images/search.png" alt="search icon" ></button>
+                </form> 
             </div>
-
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Cinema.html">Cinema</a></li>
-                    <li><a href="Food Corner.html">Food Corner</a></li>
-                    <li class="visiting"><a href="Game Zone.html">Game Zone</a></li>
-                    <li><a href="Shopping.html">Shopping</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        
         </div>
-    </header>
-    <hr>
-    <main>
-        <section class="start">
-            <img src="/images/mall crops.png" alt="a picture of dream mall" width="100%" height="200">
-            <h1 class="page name">Game Zone</h1>
-        </section>
-        <section class="content">
+
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__ul__li"><a href="Home.html">Home</a></li>
+                <li class="nav__ul__li"><a href="About.html">About</a></li>
+                <li class="nav__ul__li"><a href="Cinema.html">Cinema</a></li>
+                <li class="nav__ul__li"><a href="Food Corner.html">Food Corner</a></li>
+                <li class="nav__ul__li nav__li__visiting"><a href="Game Zone.html">Game Zone</a></li>
+                <li class="nav__ul__li"><a href="Shopping.html">Shopping</a></li>
+                <li class="nav__ul__li"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <main>
+            <section class="start">
+                <h1 class="start__page-name">Game Zone</h1>
+            </section>
             <h3>Entertain yourself in our game zone with different options available for everyone</h3>
-            <div class="kids">
-                <h2>Kids Zone</h2>
-                <div class="vid">
-                    <video width="200" controls>
-                        <source src="/videos/kid1.mp4" type="video/mp4">  
-                    </video>
-                    <details><summary>Kids zone</summary>Above is an illustration for the Kids Zone at dream mall</details>
-                    <p>Kids Zone 1</p>
-                </div>
-            </div>
-            <div class="3D">
-                <h2>3D Games</h2>
-                <div class="vid">
-                    <video width="200" controls>
-                        <source src="/videos/vr1.mp4" type="video/mp4">  
-                    </video>
-                    <details><summary>3D game illustration 1</summary>Above is an illustration for the 3D game zone 1 at dream mall</details>
-                    <p>3D Game Zone 1</p>
-                </div>
-                <div class="vid">
-                    <video width="200" controls>
-                        <source src="/videos/vr2.mp4" type="video/mp4">  
-                    </video>
-                    <details><summary>3D game illustration 2</summary>Above is an illustration for the 3D game zone 2 at dream mall</details>
-                    <p>3D Game Zone 2</p>
-                </div>
-                
-            </div>
-            <div class="others">
-                <h2>Other Games</h2>
-                <div class="pic">
-                    <img src="/images/disco.png" alt="Disco dance floor" width="200" height="200"><br>
-                    <p>Interactive LED disco floor Dance, Follow the dance moves or freestyle and enjoy your time</p>
-                    <p>Price: 150etb</p>
-                </div>
-                <div class="pic">
-                    <img src="/images/escape.png" alt="escape room game" width="200" height="200"><br>
-                    <p>Escape room Game, You got 60 minutes to save yourself!</p>
-                    <p>Price: 300etb</p>
-                </div>
-                <div class="pic">
-                    <img src="/images/mirror.png" alt="Mirror maze game" width="200" height="200"><br>
-                    <p>Mirror Maze, Don't bump yourself find the right path. Dont follow your reflection!</p>
-                    <p>Price: 200etb</p>
-                </div>
-                <div class="pic">
-                    <img src="/images/laser.png" alt="laser tag game" width="200" height="200"><br>
-                    <p>Laser Tag, Choose your team and have the funniest battle. Play to Win!</p>
-                    <p>Price: 250etb</p>
-                </div>
-            </div>
-            <div class="sports">
-                <h2>Sport Games</h2>
-                <div class="tb">
+            <section class="whole__parts">
+                <div class="whole">
+                    <h2>3D Games</h2>
+                    <div class="whole__parts">
+                        <div class="whole__parts__vid">
+                            <video width="200" controls>
+                                <source src="./videos/vr1.mp4" type="video/mp4">  
+                            </video>
+                            <details><summary>3D game illustration 1</summary>Above is an illustration for the 3D game zone 1 at dream mall</details>
+                            <p>3D Game Zone 1</p>
+                        </div>
+                        <div class="whole__parts__vid">
+                            <video width="200" controls>
+                                <source src="./videos/vr2.mp4" type="video/mp4">  
+                            </video>
+                            <details><summary>3D game illustration 2</summary>Above is an illustration for the 3D game zone 2 at dream mall</details>
+                            <p>3D Game Zone 2</p>
+                        </div>
+                    </div>
                     
-                    <table>
+                </div>
+                <div class="whole">
+                    <h2>Kids Zone</h2>
+                    <div class="whole__parts">
+                        <div class="whole__parts__vid">
+                            <video width="200" controls>
+                                <source src="./videos/kid1.mp4" type="video/mp4">  
+                            </video>
+                            <details><summary>Kids zone</summary>Above is an illustration for the Kids Zone at dream mall</details>
+                            <p>Kids Zone 1</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="whole">
+                <h2>Other Games</h2>
+                <div class="whole__parts"> 
+                    <div class="whole__parts__pic">
+                        <img src="./images/disco.png" alt="Disco dance floor" width="200" height="200"><br>
+                        <p>Interactive LED disco floor Dance, Follow the dance moves or freestyle and enjoy your time</p>
+                        <p>Price: 150etb</p>
+                    </div>
+                    <div class="whole__parts__pic">
+                        <img src="./images/escape.png" alt="escape room game" width="200" height="200"><br>
+                        <p>Escape room Game, You got 60 minutes to save yourself!</p>
+                        <p>Price: 300etb</p>
+                    </div>
+                    <div class="whole__parts__pic">
+                        <img src="./images/mirror.png" alt="Mirror maze game" width="200" height="200"><br>
+                        <p>Mirror Maze, Don't bump yourself find the right path. Dont follow your reflection!</p>
+                        <p>Price: 200etb</p>
+                    </div>
+                    <div class="whole__parts__pic">
+                        <img src="./images/laser.png" alt="laser tag game" width="200" height="200"><br>
+                        <p>Laser Tag, Choose your team and have the funniest battle. Play to Win!</p>
+                        <p>Price: 250etb</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Sport Games</h2>
+                <div>
+                    
+                    <table class="table">
                         <tr>
-                            <th>Game Descriptions</th>
-                            <th>Prices</th>
+                            <th class="table__th">Game Descriptions</th>
+                            <th class="table__th">Prices</th>
                             
                         </tr>
                         <tr>
-                            <td>Fooseball: 10 balls per game</td>
-                            <td>30-50etb per game</td>
+                            <td class="table__td">Fooseball: 10 balls per game</td>
+                            <td class="table__td">30-50etb per game</td>
                         
                         </tr>
                         <tr>
-                            <td>Basketball: 2 mins per game</td>
-                            <td>40-60etb per game</td>
+                            <td class="table__td">Basketball: 2 mins per game</td>
+                            <td class="table__td">40-60etb per game</td>
                             
                         </tr>
                         <tr>
-                            <td>Table Tennis: 5 mins per game </td>
-                            <td> 50-100etb per game</td>
+                            <td class="table__td">Table Tennis: 5 mins per game </td>
+                            <td class="table__td"> 50-100etb per game</td>
                             
                         </tr>
                         <tr>
-                            <td>Climbing: 10 mins per game</td>
-                            <td>150-200etb per game</td>
-                           
+                            <td class="table__td">Climbing: 10 mins per game</td>
+                            <td class="table__td">150-200etb per game</td>
+                            
                         </tr>
-                       
+                        
                     </table>
                 </div>
             </div>
-            <p>For further description and price list of the games available visit Dream Mall's game zone website at &nbsp; <span><a href="#">Dream Game Zone Website</a></span></p>
-        </section>
-    </main>
+            <p class="describe">For further description and price list of the games available visit Dream Mall's game zone website at &nbsp; <span><a href="#">Dream Game Zone Website</a></span></p>
+        
+        </main>
 
-    <hr>
-
-    <footer>
-        <div class="container">
-            <div class="logo">
-                <h1><span><img src="/images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span> &nbsp; DreamMall </h1>
+        
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__container__contained">
+                    <h1><span><img src="./images/dream logo.jpg" alt="Dream mall's logo" height="30" width="30"></span>  DreamMall </h1>
+                    <p id="moto">A place where there is something for everyone</p>
+                </div>
+                <div class="footer__container__contained">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="./images/instagram.png" alt="instagram page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/telegram.png" alt="telegram page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/twitter.png" alt="twitter page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/linkedin.png" alt="linkedin page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/facebook.png" alt="facebook page link" height="25" width="25"></a>
+                </div>
             </div>
-            <p id="moto">A place where there is something for everyone</p>
-            <div class="follow">
-                <h2>Follow Us</h2>
-                <a href="#"><img src="/images/instagram.png" alt="instagram page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/telegram.png" alt="telegram page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/twitter.png" alt="twitter page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/linkedin.png" alt="linkedin page link" height="25" width="25"></a>
-                <a href="#"><img src="/images/facebook.png" alt="facebook page link" height="25" width="25"></a>
-            </div>
-            <p>(251)11- 554- 03- 03</p>
-            <p id="bottom">copyright 2022, All rights reserved</p>
-
-        </div>
-    </footer>
-    
-</body>
+                <p id="call">(251)11- 554- 03- 03</p>
+                <p id="bottom">copyright 2022, All rights reserved</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
