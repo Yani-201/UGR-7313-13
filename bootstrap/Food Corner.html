@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Mall</title>
+    <link rel="icon" type="image/x-icon" href="./images/dream logo.jpg" />
+    <style>
+        .start{
+            background-image: url("./images/mall.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 15%;
+             }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+
+  <body style="background-color:beige;">
+    <section id="title">
+      <div class="d-none d-sm-flex justify-content-center">
+        <p class="fs-7 fw-light">
+          opening hours; weekdays: 8:00am - 10:00pm weekends: 6:00am - 12:00pm
+        </p>
+      </div>
+      <div class="container-fluid d-flex justify-content-between flex-row flex-wrap">
+        <div>
+          <h1><span><img src="./images/dream logo.jpg" alt="Dream mall's logo" height="40" width="40"/></span>DreamMall</h1>
+        </div>
+        <div>
+          <form>
+            <label for="searching">Search</label>
+            <input type="text" id="searching" placeholder="search anything" name="query" onblur="validateSearch()"/>
+            <button class="btn btn-light" title="search"> <img src="./images/search.png" alt="search icon" /> </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Nav Bar -->
+      <div class="bg-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse w-100" id="navbarNav">
+            <ul class="navbar-nav w-100">
+              <li class="nav-item mx-auto"> <a class="nav-link text-light" href="Home.html">Home</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="About.html">About</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="Cinema.html">Cinema</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-warning" href="Food Corner.html">Food Corner</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="Game Zone.html">Game Zone</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="Shopping.html">Shopping</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+        <main>
+            <section class="start d-flex justify-content-center">
+                
+                <h2 class="text-light">Food Corner</h2>
+            </section>
+            
+                <h6>Come to our Food Corner there is nothing that you can't find!</h6>
+                <div class="container-md p-5">
+                    <h3>Cafe, Bistro, and Sweet Shops</h3>
+                    <div  class="row">
+                        <div class="col pt-1" >
+                            <img src="./images/beans.png" alt="Beans coffee shop and bistro's  picture" width="200" height="200">
+                            <p>Beans Coffee shop and Bistro, serves the best coffee in town</p>
+                        </div>
+                        <div class="col pt-1" >
+                            <img src="./images/glorious.png" alt="glorious sweet shop's picture" height="200" width="200">
+                            <p>Glorious sweet shop, come and get any kind of sweets we got every one of them</p>
+                        </div>
+                        <div class="col pt-1" >
+                            <img src="./images/oasis.png" alt="oasis cafe's picture" width="200" height="200">
+                            <p>Oasis Cafe, enjoy a chill and quite place with the best service, come with your loved ones</p>
+                        </div>
+                        <div  class="col pt-1">
+                            <img src="./images/icecream.png" alt="Bob rock's ice cream shop" width="200" height="200">
+                            <p>Bob Rock's icecream shop, test the most spectacular flavors with us. Do you want custome made flavors? then, Just Name It</p>
+                        </div>
+                    </div>
+                </div>
+                <div  class="container-md px-5">
+                    <h3>Juice, Fast Food, and Pizzeria</h3>
+                    <div  class="row">
+                    
+                        <div class="col pt-1" >
+                            <img src="./images/juice.png" alt="Flavor Juice and Smoothie Bar's picture" width="200" height="200">
+                            <p>Flavor Juice and Smoothie Bar. Get fresh, smooth, and cold taste of your favourite smoothie/juice</p>
+                        </div>
+                        <div class="col pt-1">
+                            <img src="./images/fastfood.png" alt="Haleta Fast Food's Picture" width="200" height="200">
+                            <p>Haleta fast food! Everyday fresh food served. Feed your body and soul with the delicious, hot, and tasty meals</p>
+                        </div>
+                        <div class="col pt-1">
+                            <img src="./images/pizzeria.png" alt="Injoy Pizzeria's picture" width="200" height="200">
+                            <p>Injoy Pizzeria, Taste the most delicious,italiano style pizzas. Come with your family we got pizzas of all sizes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div  class="container-md p-5">
+                    <h3>Bars and Restaurants</h3>
+                    <div  class="row">
+                        <div  class="col pt-1">
+                            <img src="./images/bar.png" alt="Zion Bar's Picture" width="200" height="200">
+                            <p>Zion Bar, the coolest indoor bar yet! Have your parties with us and make the most out of your experience.</p>
+                        </div>
+                        <div class="col pt-1" >
+                            <img src="./images/restaurant.png" alt="Yummy restaurant's picture" width="200" height="200">
+                            <p>Yummy Restaurant, Fine dining with the most diversified menu. Come and eat whatever you would like!</p>
+                        </div>
+                        <div  class="col pt-1">
+                            <img src="./images/barrest.png" alt="Samty Bar and Restaurant's picture" width="200" height="200">
+                            <p>Samty Bar and Restaurant. Drink, Eat, party? Come to us we will provide it all.</p>
+                        </div>
+                    </div>
+                </div>
+            
+        </main>
+
+        <footer class="container-fluid bg-dark text-light">
+            <div class=" container-fluid d-flex justify-content-between flex-row flex-wrap ">
+                <div class="me-5">
+                    <h1><span><img src="./images/dream logo.jpg" alt="Dream mall's logo" height="40" width="40"></span>  DreamMall </h1>
+                    <p>A place where there is something for everyone</p>
+                </div>
+                <div class="me-2, mb-2">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="./images/instagram.png" alt="instagram page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/telegram.png" alt="telegram page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/twitter.png" alt="twitter page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/linkedin.png" alt="linkedin page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/facebook.png" alt="facebook page link" height="25" width="25"></a>
+                </div>
+            </div>
+                <p class="mt-1">(251)11- 554- 03- 03</p>
+                <p class="text-center">copyright 2022, All rights reserved</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>

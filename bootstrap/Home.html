@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Mall</title>
+    <link rel="icon" type="image/x-icon" href="./images/dream logo.jpg" />
+    <style>
+        .start{
+            background-image: url("./images/mall.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 15%;
+             }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <section id="title">
+      <div class="d-none d-sm-flex justify-content-center">
+        <p class="fs-7 fw-light">
+          opening hours; weekdays: 8:00am - 10:00pm weekends: 6:00am - 12:00pm
+        </p>
+      </div>
+      <div class="container-fluid d-flex justify-content-between flex-row flex-wrap">
+        <div>
+          <h1><span><img src="./images/dream logo.jpg" alt="Dream mall's logo" height="40" width="40"/></span>DreamMall</h1>
+        </div>
+        <div>
+          <form>
+            <label for="searching">Search</label>
+            <input type="text" id="searching" placeholder="search anything" name="query" onblur="validateSearch()"/>
+            <button class="btn btn-light" title="search"> <img src="./images/search.png" alt="search icon" /> </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Nav Bar -->
+      <div class="bg-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse w-100" id="navbarNav">
+            <ul class="navbar-nav w-100">
+              <li class="nav-item mx-auto"> <a class="nav-link text-warning" href="Home.html">Home</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="About.html">About</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="Cinema.html">Cinema</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="Food Corner.html">Food Corner</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="Game Zone.html">Game Zone</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="Shopping.html">Shopping</a></li>
+              <li class="nav-item mx-auto"><a class="nav-link text-light" href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+        <main>
+            <section class="start d-flex justify-content-center" >
+                <h2 class="text-light"> DreamMall </h2>
+            </section>
+            <section class="p-5 container-md" >
+                <h3>Latest News</h3>
+                <section>
+                    
+                    
+                        <h4>Upcoming Events</h4>
+                        <div class="row pt-1" >
+                            <div class="col mt-4" >
+                                <img src="./images/music fest.png" alt="music festival picture" width="250" height="250"><br>
+                                <audio controls class="w-75">
+                                    <source src="./audio/music fest.mp3" type="audio/mpeg">
+                                </audio>
+                                <details><summary> Music festival</summary>
+                                Spend your new year's eve at our music festival
+                                </details>
+                                <p>Experience the epic new year's eve music festival on December 31,2022 happening in the biggest hall of Dream mall </p>
+                            </div>
+                            <div class="col mt-4" >
+                                <img src="./images/art gallery.png" alt="Art exhibition picture" width="250" height="250"><br>
+                                <audio controls class="w-75">
+                                    <source src="./audio/art fest.mp3" type="audio/mpeg">
+                                </audio>
+                                <details><summary> Art Exhibition</summary>
+                                    Experience the first natural, fine art exhibition at dream mall
+                                </details>
+                                <p>This is the first art exhibition at dream mall happening on January 21st, be there and witness the natural beauty of art from the works of the different special artists</p>
+                            </div>
+            
+                    
+                    
+                            
+                        
+                            <div class=" col">
+                                <h4>What's new</h4>
+                                <img src="./images/7d vr.png" alt="kids using 7D projector simulator" width="250" height="250"><br>
+                                <audio controls class="w-75">
+                                    <source src="./audio/7d.mp3" type="audio/mpeg">
+                                </audio>
+                                <details><summary> 7D simulator</summary>
+                                    Interactive 7D projector Simulator - Coming Soon at dream mall's game zone
+                                </details>
+                                <p>Soon coming up at dream mall's game zone is the first 7D projector simulator in the country. Visit dream mall and be the first one to have it all</p>
+                            </div>
+                        
+                        </div>
+                   
+                </section>
+            </section>
+            <h5 class="px-5">Come visit us and make unforgettable memories</h5>
+
+        </main>
+        
+
+        <footer class="container-fluid bg-dark text-light">
+            <div class=" container-fluid d-flex justify-content-between flex-row flex-wrap ">
+                <div class="me-5">
+                    <h1><span><img src="./images/dream logo.jpg" alt="Dream mall's logo" height="40" width="40"></span>  DreamMall </h1>
+                    <p>A place where there is something for everyone</p>
+                </div>
+                <div class="me-2, mb-2">
+                    <h2>Follow Us</h2>
+                    <a href="#"><img src="./images/instagram.png" alt="instagram page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/telegram.png" alt="telegram page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/twitter.png" alt="twitter page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/linkedin.png" alt="linkedin page link" height="25" width="25"></a>
+                    <a href="#"><img src="./images/facebook.png" alt="facebook page link" height="25" width="25"></a>
+                </div>
+            </div>
+                <p class="mt-1">(251)11- 554- 03- 03</p>
+                <p class="text-center">copyright 2022, All rights reserved</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
